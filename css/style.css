@@ -283,7 +283,7 @@ footer p {
 /*Media queries*/
 @media (max-width: 1000px) {
   .card-container {
-    margin: 20rem 0;
+    margin: 25rem 0;
     flex-direction: column;
   }
   .services-heading {
