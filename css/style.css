@@ -1,0 +1,296 @@
+/*Global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+#header {
+  font-family: "Montserrat", sans-serif;
+  background: url(../images/Header.png) no-repeat center center/cover;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgb(148, 148, 148);
+  position: fixed;
+  z-index: 100;
+}
+
+/*Logo*/
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 10rem;
+  background-color: rgba(255, 255, 255, 0.856);
+  border-radius: 5px;
+  height: 100%;
+}
+#header-img {
+  width: 90px;
+}
+.logo-heading {
+  margin-left: 3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+  text-shadow: 1px 1px 8px rgb(167, 166, 166);
+}
+/*End Logo*/
+
+/*Nav-bar*/
+#nav-bar {
+  margin-right: 10rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.nav-list {
+  display: flex;
+}
+.nav-link {
+  color: #000;
+}
+.nav-item {
+  background-color: rgba(255, 255, 255, 0.966);
+  margin: 0 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.nav-item:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+  transform: scale(1.05);
+}
+
+/*End Nav-bar*/
+/* Main Section*/
+.main-section {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/*Articles*/
+.article-wrapper {
+  margin: auto;
+  padding: 2rem;
+  width: 90%;
+  height: auto;
+  background-color: rgba(255, 250, 250, 0.87);
+  text-align: center;
+  border-radius: 2rem;
+  font-family: "Darker Grotesque", sans-serif;
+  text-shadow: 2px 2px 8px rgb(199, 199, 199);
+}
+.article-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-size: 4.5rem;
+  color: yellow;
+}
+.article-heading span {
+  font-size: 3.5rem;
+  color: #fff;
+}
+.article-subheading {
+  font-size: 2.8rem;
+  color: rgb(128, 128, 128);
+}
+.article-paragraph {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: rgb(65, 64, 64);
+}
+/*End Articles*/
+
+.media-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*End Main Section*/
+/*Services*/
+.services {
+  font-family: "Darker Grotesque", sans-serif;
+  background: url(../images/huesos.png) center center/cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.services-heading {
+  width: 100%;
+  color: rgb(75, 75, 75);
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+.card-container {
+  margin: 2rem auto;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-wrapper {
+  background-color: rgba(214, 209, 209, 0.596);
+  width: 300px;
+  height: auto;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(214, 209, 209);
+  transition: all 0.3s;
+}
+.card-wrapper:hover {
+  transform: scale(1.04);
+}
+.card-heading {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.card-paragraph {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+/*End Services*/
+/*Booking */
+.booking {
+  font-family: "Darker Grotesque", sans-serif;
+  /*background: url(../images/huesos.png);*/
+  background-color: gray;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.form-heading {
+  color: rgb(75, 75, 75);
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+
+.form {
+  background-color: rgb(248, 248, 78);
+  width: 500px;
+  height: 350px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  box-shadow: 0px 2px 8px #888888;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  font-size: 2.5rem;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+.input-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+.input-group textarea {
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 80px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.form-btn {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.input-group input:hover,
+.input-group textarea:hover,
+.form-btn:hover {
+  border: 1px solid black;
+}
+/*End booking*/
+/*Footer*/
+footer {
+  background-color: rgb(29, 29, 29);
+  width: 100%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.list-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+footer li {
+  margin-top: 1rem;
+}
+footer p {
+  color: #999;
+}
+/*End Footer*/
+
+/*Media queries*/
+@media (max-width: 1000px) {
+  .card-container {
+    margin: 20rem 0;
+    flex-direction: column;
+  }
+  .services-heading {
+    margin-bottom: 4rem;
+  }
+  .card-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+/*End Media queries*/
